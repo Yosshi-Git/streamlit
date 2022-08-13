@@ -4,7 +4,6 @@ import os
 import streamlit as st
 from httpx_oauth.clients.google import GoogleOAuth2
 
-
 async def write_authorization_url(client, redirect_uri):
     authorization_url = await client.get_authorization_url(
         redirect_uri,
@@ -40,9 +39,10 @@ def google_oauth2_required(func):
             try:
                 code = st.experimental_get_query_params()["code"]
             except:
+                st.markdown(f"Please login using this URL : {authorization_url}")
                 st.write(
                     f"""<h1>
-                    Please login using this <a target="_self"
+                    Please login using this <a target=""
                     href="{authorization_url}">url</a></h1>""",
                     unsafe_allow_html=True,
                 )

@@ -1,0 +1,11 @@
+export GOOGLE_CLIENT_ID="32935380641-knr23tcdl9h1egp9pf415fsi9p8296n0.apps.googleusercontent.com"
+export GOOGLE_CLIENT_SECRET="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"
+export REDIRECT_URI="http://localhost:8080"
+
+
+
+https://yosshi-git-youtube-streamlit-login-1jmhfr.streamlitapp.com/
+
+GOOGLE_CLIENT_ID="32935380641-knr23tcdl9h1egp9pf415fsi9p8296n0.apps.googleusercontent.com"
+GOOGLE_CLIENT_SECRET="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"
+REDIRECT_URI="http://localhost:8501"
