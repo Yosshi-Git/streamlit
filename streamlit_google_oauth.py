@@ -42,7 +42,7 @@ def google_oauth2_required(func):
                 st.markdown(f"Please login using this URL : {authorization_url}")
                 st.write(
                     f"""<h1>
-                    Please login using this <a target=""
+                    Please login using this <a target="_self"
                     href="{authorization_url}">url</a></h1>""",
                     unsafe_allow_html=True,
                 )
